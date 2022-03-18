@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin page</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style2.css">
+
+</head>
+<body>
+
+<div class="container">
+
+   <div class="admin-product-form-container">
+
+      <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post" enctype="multipart/form-data">
+         <h3>add a new product</h3>
+          <input type="text" placeholder="Productnaam toevoegen" name="product_name" class="box">
+          <input type="number" placeholder="Prijs met korting toevoegen" name="product_price" class="box">
+          <input type="number" placeholder="Oorspronkelijke prijs toevoegen" name="product_price" class="box">
+          <input type="file" accept="audio/mp3, audio/flac, audio/wav" name="product_mp3" class="box">
+          <label for="file">Audio toevoegen</label>
+         <input type="file" accept="image/png, image/jpeg, image/jpg" name="product_image" class="box">
+          <label for="file">Foto toevoegen</label>
+          <input type="text" placeholder="Artiest toevoegen" name="product_artist" class="box">
+          <input type="text" placeholder="OG-bestandsnaam toevoegen" name="product_filename" class="box">
+          <input type="text" placeholder="Runtime toevoegen" name="product_runtime" class="box">
+          <input type="text" placeholder="Producer toevoegen" name="product_producer" class="box">
+          <input type="text" placeholder="Opname datum toevoegen" name="product_recorded" class="box">
+         <input type="submit" class="btn" name="add_product" value="Track toevoegen!">
+      </form>
+
+   </div>
